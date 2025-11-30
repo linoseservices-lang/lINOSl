@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linos E-Security | Christmas Solar Special</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --christmas-red: #C8102E;
+            --christmas-green: #00843D;
+            --christmas-gold: #FFD700;
+            --linos-brown: #5A3D2D;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --gray: #95a5a6;
+            --text: #333333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            color: var(--text);
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--linos-brown);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover {
+            color: var(--christmas-green);
+        }
+        
+        .cta-button {
+            background-color: var(--christmas-green);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--christmas-red);
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i.postimg.cc/Sx9tcP38/father_christmas_smiling.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .primary-btn {
+            background-color: var(--christmas-gold);
+            color: var(--dark);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .primary-btn:hover {
+            background-color: #e6c200;
+            transform: translateY(-2px);
+        }
+        
+        .secondary-btn {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .secondary-btn:hover {
+            background-color: white;
+            color: var(--dark);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Story Section */
+        .story-section {
+            background-color: white;
+        }
+        
+        .story-container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .story-text {
+            flex: 1;
+        }
+        
+        .story-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .story-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .story-content {
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .story-content h3 {
+            color: var(--dark);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .story-content p {
+            margin-bottom: 20px;
+        }
+        
+        .highlight {
+            background-color: var(--christmas-red);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        
+        /* Video Section */
+        .video-section {
+            background-color: #f5f9f7;
+            text-align: center;
+        }
+        
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Solution Section */
+        .solution-section {
+            background-color: white;
+        }
+        
+        .solution-container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .solution-text {
+            flex: 1;
+        }
+        
+        .solution-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .solution-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .testimonial {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-top: 30px;
+            border-left: 5px solid var(--christmas-gold);
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        /* How It Works Section */
+        .how-it-works-section {
+            background-color: #f5f9f7;
+        }
+        
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            flex: 1;
+            text-align: center;
+            padding: 30px 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background-color: var(--christmas-green);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        
+        .step h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        /* Tier Offers Section */
+        .tier-offers-section {
+            background-color: white;
+        }
+        
+        .tiers-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .tier-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 2px solid #f0f0f0;
+        }
+        
+        .tier-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--christmas-gold);
+        }
+        
+        .tier-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .tier-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .tier-card:hover .tier-image img {
+            transform: scale(1.05);
+        }
+        
+        .tier-content {
+            padding: 25px;
+        }
+        
+        .tier-badge {
+            display: inline-block;
+            background-color: var(--christmas-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .tier-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--christmas-green);
+            margin-bottom: 15px;
+        }
+        
+        .tier-features {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+        
+        .tier-features li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .tier-features li:before {
+            content: "✓";
+            color: var(--christmas-green);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .tier-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .tier-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .tier-btn.calc {
+            background-color: var(--christmas-gold);
+            color: var(--dark);
+        }
+        
+        .tier-btn.whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .tier-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Calculator Section */
+        .calculator-section {
+            background-color: white;
+        }
+        
+        .calculator-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .calculator-image {
+            margin-bottom: 30px;
+        }
+        
+        .calculator-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        
+        .calculator-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .calculator-results {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            display: none;
+        }
+        
+        .calculator-results h3 {
+            margin-bottom: 15px;
+            color: var(--christmas-green);
+        }
+        
+        .results-list {
+            list-style-type: none;
+        }
+        
+        .results-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .results-list li:before {
+            content: "•";
+            color: var(--christmas-green);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Offer Section */
+        .offer-section {
+            background: linear-gradient(135deg, var(--christmas-green) 0%, #006b32 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .offer-section .section-title h2 {
+            color: white;
+        }
+        
+        .offer-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .offer-image {
+            margin: 30px 0;
+        }
+        
+        .offer-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .countdown-item {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 100px;
+        }
+        
+        .countdown-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .countdown-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .benefit {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .benefit i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--christmas-gold);
+        }
+        
+        .payment-plan {
+            background-color: white;
+            color: var(--dark);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: var(--shadow);
+        }
+        
+        .payment-plan h3 {
+            margin-bottom: 20px;
+            color: var(--christmas-green);
+        }
+        
+        .plan-features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .plan-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .plan-feature i {
+            color: var(--christmas-green);
+        }
+        
+        /* FAQs Section */
+        .faqs-section {
+            background-color: #f5f9f7;
+        }
+        
+        .faqs-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: var(--christmas-red);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        /* Testimonials Section */
+        .testimonials-section {
+            background-color: white;
+        }
+        
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            font-style: normal;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section .section-title h2 {
+            color: white;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .cta-btn.whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .cta-btn.call {
+            background-color: var(--christmas-gold);
+            color: var(--dark);
+        }
+        
+        .cta-btn.email {
+            background-color: var(--christmas-green);
+            color: white;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a252f;
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            color: var(--christmas-gold);
+        }
+        
+        .footer-links {
+            list-style-type: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav-links {
+                gap: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .story-container, .solution-container {
+                flex-direction: column;
+            }
+            
+            .steps-container {
+                flex-direction: column;
+            }
+            
+            .calculator-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .countdown {
+                flex-wrap: wrap;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://i.postimg.cc/xjkxb4fz/linos-e-security.jpg" alt="Linos E-Security" class="logo-img">
+                <div class="logo-text">Linos E-Security</div>
+            </div>
+            <nav class="nav-links">
+                <a href="#solution">How It Works</a>
+                <a href="#tiers">Christmas Offers</a>
+                <a href="#calculator">Savings Calculator</a>
+                <a href="#faqs">FAQs</a>
+            </nav>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3xn9Pe8DKqsMmuYPrk2n6veERX12zZf7IrQI2nz18UQ_8Rw/viewform" target="_blank" class="cta-button">Get Free Consultation</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Stop Burning ₦2 Million a Year on Diesel</h1>
+            <p>This Christmas, give your business the gift of reliable power. Lock in up to 10% off and eliminate energy bills with solar.</p>
+            <div class="hero-buttons">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3xn9Pe8DKqsMmuYPrk2n6veERX12zZf7IrQI2nz18UQ_8Rw/viewform" target="_blank" class="primary-btn">Get Free Consultation</a>
+                <button class="secondary-btn" onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'})">See How Much You Can Save</button>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem;">Time-sensitive Christmas discount inside!</p>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Story of One School's Loss... and How Solar Saved the Day</h2>
+                <p>A true story of how solar power transformed a Nigerian school</p>
+            </div>
+            <div class="story-container">
+                <div class="story-text">
+                    <div class="story-content">
+                        <h3>When Power Outage Cost ₦2.3 Million</h3>
+                        <p>It was exam season at a prominent Nigerian school. Students were preparing for their final exams when NEPA struck at 2:30 PM. The school's generator failed to start, and the backup system was inadequate.</p>
+                        <p>The school lost connectivity, lighting, and air conditioning during critical examination hours. Parents were furious, and the school's reputation was at stake.</p>
+                        <p>That's when the school principal did the math:</p>
+                        <p>Lost revenue from student withdrawals: ₦1.8 million</p>
+                        <p>Emergency generator repairs: ₦350,000</p>
+                        <p>Diesel costs for the month: ₦150,000</p>
+                        <p><span class="highlight">Total loss: ₦2.3 million in one month</span></p>
+                        <p>The school installed a 40kVA solar system the following month. Since then, they've had zero power outages during school hours and have saved over ₦4 million in diesel costs in just one year.</p>
+                        <p><strong>Your business doesn't have to suffer the same fate.</strong></p>
+                    </div>
+                </div>
+                <div class="story-image">
+                    <img src="https://i.postimg.cc/Bv9BxLk8/STUDENTS_PC.jpg" alt="Students in computer lab powered by solar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>See How Solar Power Transforms Businesses</h2>
+                <p>Watch this short video to see real results</p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/NF1Zc2uLWnk" title="Solar Power Transformation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>How To Benefit From Our Christmas Offer</h2>
+                <p>Follow these 3 simple steps to get your solar system</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Use Our Calculator</h3>
+                    <p>Calculate your potential savings with our easy-to-use solar calculator</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Get Your Quote</h3>
+                    <p>Receive a personalized quote with your Christmas discount applied</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Send Us a Message</h3>
+                    <p>Contact us to schedule your free consultation and site audit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section" id="solution">
+        <div class="container">
+            <div class="section-title">
+                <h2>Here's What Changed Everything for the School</h2>
+                <p>And 500+ Nigerian Businesses</p>
+            </div>
+            <div class="solution-container">
+                <div class="solution-text">
+                    <p>The school installed a 40kVA solar system in December 2023.</p>
+                    
+                    <div class="testimonial">
+                        <p>"Installing solar was the best decision we made for our school. Not only have we saved millions in diesel costs, but our students now have uninterrupted power for their studies. The Christmas discount made it even more affordable."</p>
+                        <p class="testimonial-author">— Principal Adebayo, School Administrator, Lagos</p>
+                    </div>
+                </div>
+                <div class="solution-image">
+                    <img src="https://i.postimg.cc/PrjdPNyT/Gemini_Generated_Image_cxhqj3cxhqj3cxhq.png" alt="Solar installation benefits">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tier Offers Section -->
+    <section class="tier-offers-section" id="tiers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Christmas Solar Offers - Limited Time Only!</h2>
+                <p>Choose the perfect solar solution for your needs</p>
+            </div>
+            <div class="tiers-container">
+                <!-- Tier 1 -->
+                <div class="tier-card">
+                    <div class="tier-image">
+                        <img src="https://i.postimg.cc/QdTMzQvh/5kva_setup.jpg" alt="5kVA solar system">
+                    </div>
+                    <div class="tier-content">
+                        <span class="tier-badge">3% OFF</span>
+                        <h3>1kVA to 15kVA Systems</h3>
+                        <div class="tier-price">Perfect for homes & small businesses</div>
+                        <ul class="tier-features">
+                            <li>Basic security integration</li>
+                            <li>5-year warranty</li>
+                            <li>Easy installation</li>
+                            <li>Reliable performance</li>
+                        </ul>
+                        <div class="tier-buttons">
+                            <a href="#calculator" class="tier-btn calc">Calculate Your Savings</a>
+                            <a href="#" class="tier-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tier 2 -->
+                <div class="tier-card">
+                    <div class="tier-image">
+                        <img src="https://i.postimg.cc/m2FRZbjL/Cworth_batteries.jpg" alt="Cworth batteries">
+                    </div>
+                    <div class="tier-content">
+                        <span class="tier-badge">5% OFF</span>
+                        <h3>15kVA to 35kVA Systems</h3>
+                        <div class="tier-price">Ideal for medium businesses</div>
+                        <ul class="tier-features">
+                            <li>Advanced security features</li>
+                            <li>7-year warranty</li>
+                            <li>Enhanced monitoring</li>
+                            <li>Higher efficiency</li>
+                        </ul>
+                        <div class="tier-buttons">
+                            <a href="#calculator" class="tier-btn calc">Calculate Your Savings</a>
+                            <a href="#" class="tier-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tier 3 -->
+                <div class="tier-card">
+                    <div class="tier-image">
+                        <img src="https://i.postimg.cc/DZhryN60/download_(3).jpg" alt="Large solar installation">
+                    </div>
+                    <div class="tier-content">
+                        <span class="tier-badge">10% OFF</span>
+                        <h3>36kVA to 50kVA Systems</h3>
+                        <div class="tier-price">For large homes & enterprises</div>
+                        <ul class="tier-features">
+                            <li>Full security integration</li>
+                            <li>10-year warranty</li>
+                            <li>Professional monitoring</li>
+                            <li>Maximum efficiency</li>
+                        </ul>
+                        <div class="tier-buttons">
+                            <a href="#calculator" class="tier-btn calc">Calculate Your Savings</a>
+                            <a href="#" class="tier-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PowerHub 3300 -->
+                <div class="tier-card">
+                    <div class="tier-image">
+                        <img src="https://i.postimg.cc/Vk7jTt6z/Powerplay_pro_panel_portrait_scaled.jpg" alt="PowerHub 3300">
+                    </div>
+                    <div class="tier-content">
+                        <h3>PowerHub 3300 Solar System</h3>
+                        <div class="tier-price">Perfect for homes and small businesses</div>
+                        <ul class="tier-features">
+                            <li>Up to 3.3kW output</li>
+                            <li>5kWh lithium-ion battery</li>
+                            <li>Expandable system for future energy needs</li>
+                            <li>5-year warranty</li>
+                            <li>Payment Plan: 35% down payment + 12-month installment</li>
+                        </ul>
+                        <div class="tier-buttons">
+                            <a href="#calculator" class="tier-btn calc">Calculate Your Savings</a>
+                            <a href="#" class="tier-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PowerPlay Pro -->
+                <div class="tier-card">
+                    <div class="tier-image">
+                        <img src="https://i.postimg.cc/qB62pfwJ/Power-Hub-Inverter-Battery-face-right-scaled.jpg" alt="PowerPlay Pro">
+                    </div>
+                    <div class="tier-content">
+                        <h3>PowerPlay Pro - Complete Solar System</h3>
+                        <div class="tier-price">Perfect for larger homes or businesses</div>
+                        <ul class="tier-features">
+                            <li>Up to 5kW output</li>
+                            <li>Expandable solar panels and batteries</li>
+                            <li>10-year warranty</li>
+                            <li>Advanced security features</li>
+                            <li>Payment Plan: 35% down payment + 12-month installment</li>
+                        </ul>
+                        <div class="tier-buttons">
+                            <a href="#calculator" class="tier-btn calc">Calculate Your Savings</a>
+                            <a href="#" class="tier-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="section-title">
+                <h2>How Much Can Solar Save Your Business?</h2>
+                <p>Find out in 30 seconds with our solar savings calculator</p>
+            </div>
+            <div class="calculator-container">
+                <div class="calculator-image">
+                    <img src="https://i.postimg.cc/52Mhn3H2/father_christmas_calculator.png" alt="Solar savings calculator">
+                </div>
+                
+                <p>Take 30 seconds to answer 3 simple questions:</p>
+                
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="diesel-spend">How much do you spend on diesel each month?</label>
+                        <select id="diesel-spend">
+                            <option value="50000">₦50,000</option>
+                            <option value="100000">₦100,000</option>
+                            <option value="150000" selected>₦150,000</option>
+                            <option value="200000">₦200,000</option>
+                            <option value="250000">₦250,000+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="business-type">What type of business do you run?</label>
+                        <select id="business-type">
+                            <option value="school">School</option>
+                            <option value="church">Church</option>
+                            <option value="hotel">Hotel</option>
+                            <option value="hospital">Hospital</option>
+                            <option value="realestate">Real Estate</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Where are you located?</label>
+                        <select id="location">
+                            <option value="lagos">Lagos</option>
+                            <option value="abuja">Abuja</option>
+                            <option value="portharcourt">Port Harcourt</option>
+                            <option value="ibadan">Ibadan</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button class="primary-btn" onclick="calculateSavings()">Calculate My Solar Savings</button>
+                
+                <div class="calculator-results" id="results">
+                    <h3>Based on your inputs:</h3>
+                    <ul class="results-list">
+                        <li>You're wasting approximately <strong id="yearly-waste">₦2,160,000</strong> per year on diesel.</li>
+                        <li>A recommended <strong id="system-size">10kVA</strong> system could save you that cost.</li>
+                        <li>Your estimated payback period: <strong id="payback-period">14 months</strong>.</li>
+                        <li>Your potential 5-year savings: <strong id="five-year-savings">₦10,800,000</strong>.</li>
+                    </ul>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3xn9Pe8DKqsMmuYPrk2n6veERX12zZf7IrQI2nz18UQ_8Rw/viewform" target="_blank" class="primary-btn" style="margin-top: 20px; display: inline-block; text-decoration: none;">Get Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="offer-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Christmas Solar Offer – Limited Time Only!</h2>
+                <p>Save up to 10% off solar systems</p>
+            </div>
+            <div class="offer-container">
+                <div class="offer-image">
+                    <img src="https://i.postimg.cc/5NYQsrCG/father_christmas_solar.png" alt="Christmas solar offer">
+                </div>
+                
+                <p>This December, we're offering <strong>up to 10% off</strong> on our premium solar systems. Includes <strong>free installation</strong> and <strong>free consultation</strong>.</p>
+                
+                <p><strong>Limited Spots Available:</strong> We're aiming for 200 installations by December 31st to qualify for our supplier's procurement bonus. Act now before the discount ends.</p>
+                
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">15</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">08</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">42</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">19</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+                
+                <div class="benefits">
+                    <div class="benefit">
+                        <i class="fas fa-truck"></i>
+                        <h4>Free Delivery in Abuja</h4>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-comments"></i>
+                        <h4>Free Consultation</h4>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>30-Day Money Back Guarantee</h4>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h4>Free Site Audit</h4>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-book"></i>
+                        <h4>Free Security Ebook</h4>
+                    </div>
+                </div>
+                
+                <div class="payment-plan">
+                    <h3>Pay Small Small – No Stress!</h3>
+                    <p>No need to break the bank. Install solar today and pay <strong>35% upfront</strong>, then spread the rest over <strong>12 months</strong> with our flexible payment plan.</p>
+                    
+                    <div class="plan-features">
+                        <div class="plan-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Flexible terms</span>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Zero interest payments</span>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Immediate installation</span>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free delivery & consultation</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3xn9Pe8DKqsMmuYPrk2n6veERX12zZf7IrQI2nz18UQ_8Rw/viewform" target="_blank" class="primary-btn" style="margin-top: 20px; display: inline-block; text-decoration: none;">Claim Your Christmas Discount Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs-section" id="faqs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about solar power</p>
+            </div>
+            <div class="faqs-container">
+                <div class="faq-item">
+                    <div class="faq-question">How long does a solar installation take?</div>
+                    <p>Most installations take 1-3 days depending on the complexity of the system. Smaller residential systems can often be completed in just one day, while larger commercial installations may take 2-3 days.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What happens during rainy season or at night?</div>
+                    <p>Your solar system stores excess energy in batteries during the day, which powers your business at night. Even on cloudy days, solar panels still generate 20-30% of their capacity.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How long do solar panels last?</div>
+                    <p>Solar panels typically last 25-30 years, with most manufacturers offering 20-25 year performance warranties. Other system components have warranties ranging from 5-10 years.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do I need permission to install solar panels?</div>
+                    <p>For most residential and commercial installations, no special permission is required. We handle all necessary paperwork for larger commercial systems.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What maintenance is required?</div>
+                    <p>Solar systems require minimal maintenance - occasional cleaning of panels and routine system checks. We offer maintenance packages for complete peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Are Saying</h2>
+                <p>Real stories from real customers</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <p>"Switching to solar was the best decision we made for our business. No more NEPA issues, no more expensive diesel bills. The savings have been incredible."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://i.postimg.cc/8PzSg8y1/download_(4).jpg" alt="Chioma E.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Chioma E.</h4>
+                            <p>Salon Owner, Lagos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p>"The customer service was amazing, and the installation was quick. We've saved millions already. I wish I had done this years ago!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div style="background-color: #3498db; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">AO</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Adebayo O.</h4>
+                            <p>Restaurant Owner, Abuja</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p>"My only regret is not installing solar sooner. The peace of mind knowing I have constant power is priceless. My business has grown 40% since installation."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <div style="background-color: #e74c3c; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">KA</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Kunle A.</h4>
+                            <p>Electronics Store, Ibadan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ready to Start Saving?</h2>
+                <p>Choose the easiest way to get started</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#" class="cta-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp Us for Quick Details
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3xn9Pe8DKqsMmuYPrk2n6veERX12zZf7IrQI2nz18UQ_8Rw/viewform" target="_blank" class="cta-btn email">
+                    <i class="fas fa-envelope"></i>
+                    Get Free Consultation
+                </a>
+            </div>
+            <p style="margin-top: 30px; font-size: 0.9rem;">This Christmas offer, including the 10% discount and free installation, expires permanently on December 31st, 2024. Don't miss out.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <img src="https://i.postimg.cc/xjkxb4fz/linos-e-security.jpg" alt="Linos E-Security" class="logo-img" style="height: 60px; margin-bottom: 15px;">
+                    <p>Providing reliable solar energy solutions to Nigerian homes and businesses since 2015.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#solution">How It Works</a></li>
+                        <li><a href="#tiers">Christmas Offers</a></li>
+                        <li><a href="#calculator">Savings Calculator</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@linosesecurity.com.ng</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 21 Blantyre Street, Ademola Adetokunbo Crescent, Wuse 2, Abuja</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Linos E-Security. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Calculator functionality
+        function calculateSavings() {
+            const dieselSpend = parseInt(document.getElementById('diesel-spend').value);
+            const yearlyWaste = dieselSpend * 12;
+            const fiveYearSavings = yearlyWaste * 5;
+            
+            // Determine system size based on diesel spend
+            let systemSize = "5kVA";
+            if (dieselSpend >= 100000) systemSize = "10kVA";
+            if (dieselSpend >= 150000) systemSize = "15kVA";
+            if (dieselSpend >= 200000) systemSize = "20kVA";
+            
+            // Determine payback period (simplified calculation)
+            let paybackPeriod = "12 months";
+            if (dieselSpend >= 100000) paybackPeriod = "10 months";
+            if (dieselSpend >= 150000) paybackPeriod = "9 months";
+            if (dieselSpend >= 200000) paybackPeriod = "8 months";
+            
+            // Update results
+            document.getElementById('yearly-waste').textContent = `₦${yearlyWaste.toLocaleString()}`;
+            document.getElementById('system-size').textContent = systemSize;
+            document.getElementById('payback-period').textContent = paybackPeriod;
+            document.getElementById('five-year-savings').textContent = `₦${fiveYearSavings.toLocaleString()}`;
+            
+            // Show results
+            document.getElementById('results').style.display = 'block';
+        }
+        
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date();
+            const newYear = new Date(now.getFullYear(), 11, 31, 23, 59, 59); // December 31st
+            
+            const diff = newYear - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        // Initialize countdown
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
